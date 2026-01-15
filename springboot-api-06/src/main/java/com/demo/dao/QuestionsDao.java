@@ -9,10 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.demo.model.Questions;
 
 public interface QuestionsDao extends JpaRepository<Questions,Long>{
-	
-	
 	List<Questions> findAll();
-	
 	List<Questions> getQuestionsById(Long id);
 	
 	List<Questions> getQuestionsByTopic(String topic);
