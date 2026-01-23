@@ -9,13 +9,15 @@ import com.demo.model.ApiUsage;
 
 public interface ApiUsageDao extends JpaRepository<ApiUsage,Integer>{
 
-	ApiUsage findByUserIdAndApiNameUsageDate (
+	ApiUsage findByUserIdAndApiNameAndUsageDate (
 			int userId,
 			String apiName,
 			String usageDate
 			);
 
-	List<ApiUsage> findByName(String name);
+	//List<ApiUsage> findById(int id);
+
+	//ApiUsage findByUserIdAndApiNameAndUsageDate(int userId, String apiName, String today);
 	
 	
 	
