@@ -13,23 +13,23 @@ public class Category {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
-	private String name;
+	private int categoryid;
+	private String categoryname;
 	
 	@OneToMany(mappedBy="category")
 	private List<Product> products;
-
-	public int getId() {
-		return id;
+	
+	public int getCategoryid() {
+		return categoryid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setCategoryid(int categoryid) {
+		this.categoryid = categoryid;
 	}
-	public String getName() {
-		return name;
+	public String getCategoryname() {
+		return categoryname;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setCategoryname(String categoryname) {
+		this.categoryname = categoryname;
 	}
 	public List<Product> getProducts() {
 		return products;
@@ -37,4 +37,5 @@ public class Category {
 	public void setProducts(List<Product> products) {
 		this.products = products;
 	}
-}
+	}
+

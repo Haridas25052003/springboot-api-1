@@ -12,31 +12,31 @@ public class Product {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private int id;
-	private String name;
-	private double price;
+	private int productid;
+	private String productname;
+	private double productprice;
 	
 	@ManyToOne
-	@JoinColumn(name="id",nullable=false)
+	@JoinColumn(name="categoryid",nullable=false)
 	private Category category;
 
-	public int getId() {
-		return id;
+	public int getProductid() {
+		return productid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setProductid(int productid) {
+		this.productid = productid;
 	}
-	public String getName() {
-		return name;
+	public String getProductname() {
+		return productname;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setProductname(String productname) {
+		this.productname = productname;
 	}
-	public double getPrice() {
-		return price;
+	public double getProductprice() {
+		return productprice;
 	}
-	public void setPrice(double price) {
-		this.price = price;
+	public void setProductprice(double productprice) {
+		this.productprice = productprice;
 	}
 	public Category getCategory() {
 		return category;
