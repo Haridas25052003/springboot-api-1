@@ -16,19 +16,6 @@ public class ProductController {
 	@Autowired
 	private ProductService ps;
 	
-	@GetMapping(value="/")
-	public List<Product> m1(){
-		return ps.findAll();
-	}
 	
-	@GetMapping(value="/req1/{productid}")
-	public List<Product> m2(@PathVariable int productid){
-		return ps.getProductByProductId(productid);
-	}
-	
-	@GetMapping(value="/req2/{productname}")
-	public List<Product> m3(@PathVariable String productname){
-		return ps.getProductByProductName(productname);
-	}
 	
 }

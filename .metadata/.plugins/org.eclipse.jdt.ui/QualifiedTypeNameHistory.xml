@@ -5,4 +5,5 @@
     <fullyQualifiedTypeName name="com.demo.model.User"/>
     <fullyQualifiedTypeName name="com.demo.model.ApiLimitConfig"/>
     <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="com.demo.model.Category"/>
 </qualifiedTypeNameHistroy>
